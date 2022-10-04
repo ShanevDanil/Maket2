@@ -19,7 +19,7 @@
 }
 
 header {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     font-family: "Montserrat-Light";
     font-style: normal;
@@ -27,28 +27,31 @@ header {
     font-size: 14px;
     line-height: 24px;
     font-weight: 600;
-    width: 1440px;
+    width: 100%;
     height: 80px;
 }
 
 .logo {
-    padding-left: 100px;
-    margin-top: 21px;
+    margin-left: 100px;
 }
 
 nav {
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     color: #744343;
     width: 503px;
-    height: 40px;
+    height: 100%;
     margin-top: 32px;
     margin-left: 48px;
     font-weight: 600;
 }
 
+nav button {
+    margin-right: 124px;
+}
+
 .contactus {
-    transform: translateX(450px);
+    display: inline-block;
     border: 3px;
     background: #DD7979;
     border-radius: 10px;
@@ -59,7 +62,7 @@ nav {
     font-family: "Inter-Light";
     font-weight: 500;
     border-color: #DD7979;
-    margin-top: 21px;
+    margin-left: 463px;
 }
 
 .introduction {
@@ -139,6 +142,7 @@ h1 {
     background-color: #DD7979;
     border-radius: 25px;
     text-align: center;
+    margin-bottom: 0px;
 }
 
 .blog {
@@ -153,28 +157,39 @@ h1 {
     width: 803px;
     height: 220px;
     align-items: center;
-    font-family: "Inter-Medium";
-    font-style: normal;
-    font-weight: 700;
     font-size: 40px;
     line-height: 50px;
     color: #744343;
 }
 
 .achievements1 {
+    display: flex;
+    flex-direction: column;
     width: 267px;
     height: 218px;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
-.achievements span {
+.achievements {
     font-weight: 500;
     font-size: 18px;
-    line-height: 28px;
     color: #DD7979;
     font-family: "Inter-Light";
+}
+
+.achievements3 {
+    font-family: "Inter-Medium";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #744343;
+    margin-bottom: 0;
+    margin-top: 60px;
+}
+
+.achievements4 {
+    margin-top: 10px;
 }
 
 .landings {
@@ -182,6 +197,7 @@ h1 {
     height: 2810px;
     background-color: #FFF4F4;
     text-align: center;
+    margin-top: 0;
 }
 
 h2 {
@@ -364,7 +380,6 @@ h4 {
     line-height: 58px;
     color: #744343;
     text-align: center;
-    transform: translateY(-50px);
 }
 
 .form {
@@ -384,6 +399,7 @@ h4 {
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-left: 420px;
+    margin-bottom: 20px;
 }
 
 .form p {
@@ -408,10 +424,11 @@ h4 {
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-left: 420px;
-    transform: translateY(20px);
 }
 
 .subscribe {
+    display: flex;
+    flex-direction: column;
     width: 1440px;
     height: 544px;
     background-image: url("./images/subs1.png"), url("./images/subs2.png");
@@ -437,13 +454,12 @@ h4 {
     border-bottom: 1px;
     border-color: #995858;
     margin-left: 135px;
-    transform: translatey(60px);
+    padding-top: 60px;
 }
 
 .logo {
     display: inline-block;
     padding-left: 0px;
-    transform: translateY(-12px);
 }
 
 .socialmedia {
@@ -475,7 +491,6 @@ h4 {
     font-family: "Montserrat-Light";
     font-size: 14px;
     color: #744343;
-    transform: translateY(40px);
     text-align: center;
     padding-left: 428px;
     font-weight: 500;
@@ -499,32 +514,30 @@ h4 {
     height: 366px;
     width: 1170px;
     margin-left: 135px;
-    transform: translateY(76px);
     border-top: #995858 2px solid;
     border-bottom: #995858 2px solid;
+
 }
 
 .contactmain1 {
+    display: inline-flex;
     height: 296px;
-    width: 1170px;
-    transform: translateY(30px);
 }
 
 .contactmain2 {
     width: 661px;
-    height: 230px;
-    transform: translateY(30px);
+    display: inline-block;
 }
 
 .contactmain3 {
-    height: 48px;
     font-family: "Inter-Light";
     font-style: normal;
     font-weight: 300;
     font-size: 38px;
     line-height: 48px;
     color: #FFF4F4;
-    transform: translateY(-70px);
+    margin-bottom: 0;
+    margin-top: 30px;
 }
 
 .contactmain4 {
@@ -534,7 +547,8 @@ h4 {
     font-size: 16px;
     line-height: 26px;
     color: #FFBABA;
-    transform: translateY(-40px);
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
 .contactmain5 {
@@ -549,33 +563,37 @@ h4 {
     line-height: 26px;
     color: #FFFFFF;
     border: #DD7979 solid;
+    margin-top: 40px;
 }
 
 .contactmain6 {
-    margin-left: 725.59px;
-    transform: translateY(-250px);
     font-family: "Montserrat-Light";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     color: #FFFFFF;
-    padding-bottom: 54px;
+    display: inline;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 165px;
+    height: 296px;
+    margin-left: 40px;
 }
 
 .contactmain7 {
-    font-family: 'Inter-Medium';
+    font-family: 'Inter-Light';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
-    transform: translateY(-30px);
     color: #FFFFFF;
+    margin-bottom: 30px;
 }
 
 .contactmain8 {
-    margin-left: 941px;
-    transform: translateY(-594px);
+    margin-left: 40px;
+    margin-top: 30px;
 }
 
 .contactmain10 {
@@ -603,7 +621,8 @@ h4 {
     font-size: 12px;
     line-height: 30px;
     color: #FFFFFF;
-    transform: translateY(50px);
+    width: 1170px;
+    margin-left: 135px;
 }
 
 .contactfooter span {
@@ -613,7 +632,7 @@ h4 {
     font-size: 12px;
     line-height: 30px;
     color: #FFBABA;
-    padding-left: 15px;
+    padding-left: 4px;
 }
 
 .contactfooter p {
